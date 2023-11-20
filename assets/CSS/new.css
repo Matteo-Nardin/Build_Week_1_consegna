@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
+
+/* Impostazioni generali */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    user-select: none;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.bianco {
+    color: white;
+}
+
+.pink{
+    color: #c2128d;
+}
+
+.display {
+    display: inline-block;
+}
+
+/* Header */
+
+img {
+    width: 80%; 
+    max-width: 17em;
+    margin: 2em 4em;
+}
+
+
+/* Main */
+
+main {
+    padding: 1em;
+    margin: 2em 6em;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 4em;
+    line-height: 0.8em;
+}
+
+h1 div {
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-size: 3em;
+}
+
+#istruzioni h2{
+    padding-top: 1.8em;
+}
+p {
+    font-size: 1em;
+    padding-top: 1em;
+    font-weight: 300;
+}
+
+main ul {
+    padding: 2em;
+    line-height: 1.4em;
+}
+
+#is {
+    width: 75%;
+}
+
+b {
+    font-weight: bold;
+}
+
+#istruzioni input {
+    width: 1.5em;
+    height: 1.5em;
+    background: transparent;
+    border: 0.15em solid white;
+}
+
+#btnPr {
+    float: right;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    padding: 0.7em 2em 0.7em 2em;
+    color: #0b113b;
+    font-weight: bold;
+    background-color: #00ffff;
+}
+
+/* SECTION */  /* DI CIELO RISULTATO*/
+section{
+    text-align: center;
+    margin: 2em;
+}
+
+#results{
+    text-align: center;
+}
+#results h1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+#results p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+}
+
+/* PERCENTUALI corrette e sbagliate*/
+#correct{
+    display: inline-block;
+    text-align: left;
+    margin: 3em;
+    height: 100%;
+}
+#wrong{
+    display: inline-block;
+    text-align: right;
+    margin: 3em;
+
+}
+
+.percent{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+.questions{
+    font-family: 'Outfit', sans-serif;
+}
+
+/* GRAFICO CON PERCENTUALI*/
+
+/* Contenitore generale */
+#circle-container{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    padding: auto;
+}
+/* Grafico */
+#myChart{
+    height: 20em;    
+
+}
+/* Testo interno */
+#prova{
+    margin: auto;
+    width: 14em;
+    height: 14em;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 3em;
+    margin-top: 3.3em;
+    
+} 
+#prova div{
+    margin-top: 3em;
+    line-height: 1.3;
+}
+#prova div p{
+    
+    font-weight: 600;
+}
+#prova > p{
+    line-height: 1.3;
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+
+
+/* Bottone valutazione */
+
+#rateUS{
+    text-align: center;
+    margin-bottom: 5em;
+}
+#rateUS button{
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #00ffff00;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 0.8em 3em;
+    cursor: pointer;
+}
+
+#rateUS button:hover{
+    background-color: rgba(0, 0, 0, 0.248);
+    color: rgb(212, 212, 212);
+}
+
+/* TIMER Henry */
+
+.epicode_logo_timer{
+    padding: 0 10%;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;   
+}
+
+.logo img {
+    width: 100%;
+    margin: 0 0 5em 0;
+}
+
+.question_area {
+    padding: 0 5em;
+    text-align: center;
+}
+
+.question_text {
+    font-size: 3em;
+    width: 80%;
+    margin: 8vh auto;
+    font-family: 'Outfit', sans-serif;
+}
+
+.question_text h1{
+    font-size: 1em;
+}
+
+form button {
+    width: 30%;
+    background-color: #262951;
+    padding: 4vh 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.5vh 2%;
+    border-radius: 55px;
+    border: 3px outset ;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+form button:hover {
+    border: 3px outset rgba(144,0,128,1);
+    background: rgb(131,21,21);
+    background: linear-gradient(180deg, rgba(131,21,21,1) 0%, rgba(144,0,128,1) 100%); 
+}
+
+.numerazione_pagina {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.numerazione_pagina h3 {
+    margin-top: 4em;
+    font-size: 1.7em;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 3px;
+}
+
+.totale_pagina {
+    color: #93137f;
+}
+
+.correct {
+    background-color: green;
+}
+
+.false {
+    background-color: red;
+}
+
+.circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 60%;
+}
+.circle {
+    fill: none;
+    stroke: #00ffff;
+    stroke-width: 20;
+    stroke-linecap: round;
+    display: inline-block;
+}
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.4em;
+}
+
+.center{
+    text-align: center;
+}
+
+#starsdiv{
+    padding: 3% 0 3% 0;
+}
+
+input{
+    background-color: transparent;
+    font-size: 16px;
+    border-width: 0 0 1px 0;
+    border-color: deeppink;
+    width: 50%;
+}
+.star {
+    opacity: 0.4;
+    color: #ccc;
+    transition: color 0.3s;
+    cursor: pointer;
+    margin: 0em 0.2em;
+    width: 3em;
+}
+
+img .star:hover {
+    color: #FFD700; /* Colore giallo per la stella passata sopra */
+}
+
+
+#info{
+    background-color: #00FFFF;
+    padding: 1em;
+    margin-top: 1em;
+    border-style: none;
+    color: darkblue; 
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#info:hover{
+    background-color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1);
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}

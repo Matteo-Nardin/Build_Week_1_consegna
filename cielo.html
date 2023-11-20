@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <title>Results</title>
+</head>
+<body>
+    <div id="container" class="bianco">
+        <header>
+            <img src="assets/img/epicode_logo.png" alt="">
+        </header>
+        <main>
+            <div id="results">
+                <h2>Results</h2>
+                <p>The summary of your answers:</p>
+            </div>
+
+            <section>
+                <div id="correct">
+                    <h2>Correct</h2>
+                    <p class="percent"></p>   
+                    <p class="questions"></p>
+                </div>
+
+                <div id="circle-container">
+                        <div id="prova"></div>
+                        <canvas id="myChart" padding="2em" width="100">
+                        
+                        </canvas>
+                    
+                </div>
+
+                <div id="wrong">
+                    <h2>Wrong</h2>
+                    <p class="percent"></p>
+                    <p class="questions"></p>
+                </div>
+
+            </section>
+            
+            <div id="rateUS">
+                <button>RATE US</button>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/henry.js"></script>
+    <script src="scripts/cielo.js"></script>
+</body>
+</html>
