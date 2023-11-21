@@ -101,18 +101,15 @@ let startTime; //Dichiarazione variabile del tempo d'inizio del timer
 let timeleft =10; //Tempo rimanente quando inizia il timer
 let statoAnimazione; //in che stato si trova l'animazione del timer
 
-let domandeCorette=[];
-let domandeSbagliate =[];
 let domande=[];
-let numDomande = 5; // numero di domande che vuole rispondere l'utente
 let c=0; //contatore delle domande da mostrare e rispondere
 let difficoltaScelta = 'easy'; // impostato da solo ma poi deve essere chiesto dall'utente
 
 let score = 0; //tiene conto del punteggio
 let buttonpresscheck; //variabile per controllare che i bottoni risposte vengono premuti tanto quanto neccesario
 
-
-domande= questions.filter(obj => obj.difficulty ==difficoltaScelta).slice(0, numDomande); //raccolgo subito gli oggetti nell'array domande, n domande scelta dall'utente che hanno la difficolta scelta dall'utente
+let numDomande = questions.length;
+domande= questions; //raccolgo subito gli oggetti nell'array domande, n domande scelta dall'utente che hanno la difficolta scelta dall'utente
 
 
 document.querySelector('.totale_pagina').innerText ='/ '+ domande.length; //Mostro il numero totale di domande
@@ -234,6 +231,3 @@ function updateTimer() { //timer- chiedi a cielo
     }
     return statoAnimazione;
 }
-
-
-

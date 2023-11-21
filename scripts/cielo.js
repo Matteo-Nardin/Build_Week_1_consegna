@@ -10,9 +10,6 @@
     const urlParams = new URLSearchParams(window.location.search);
     const cieloscore = urlParams.get('score');
 
-// Log the score to the console
-
-
     console.log(cieloscore);
     let corrette = (cieloscore * 100)/numDomande;    // percentuale di risposte corrette 
     let sbagliate = 100-corrette;    // percentuale di risposte sbagliate
@@ -92,7 +89,7 @@ const correct = () => {
     let questions = document.querySelector('#correct .questions');
 
     percent.innerText = corrette.toFixed(1)+'%';
-    questions.innerText = score +'/'+numDomande+' questions'
+    questions.innerText = cieloscore +'/'+numDomande+' questions'
 }
 
 // messaggio a dx del grafico per risposte sbagliate
@@ -101,7 +98,7 @@ const wrong = () => {
     let questions = document.querySelector('#wrong .questions');
 
     percent.innerText = sbagliate.toFixed(1)+'%';
-    questions.innerText = numDomande-score +'/'+numDomande+' questions'
+    questions.innerText = numDomande-cieloscore +'/'+numDomande+' questions'
 }
 
 // funzione per bottone 'rate us'
